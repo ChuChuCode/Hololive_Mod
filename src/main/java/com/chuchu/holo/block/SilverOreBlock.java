@@ -1,4 +1,4 @@
-package com.block;
+package com.chuchu.holo.block;
 
 import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;

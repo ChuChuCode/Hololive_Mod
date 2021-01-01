@@ -1,7 +1,10 @@
 package com.chuchu.holo;
 
+import com.chuchu.holo.setup.ModItems;
 import com.chuchu.holo.setup.Registration;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
@@ -84,6 +87,13 @@ public class HoloMod
         }
     }
     */
+    //ItemGroup
+    public static final ItemGroup HOLOGROUP = new ItemGroup("holoLive") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.SILVER_INGOT.get());
+        }
+    };
 
 
 }
