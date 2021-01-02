@@ -28,7 +28,7 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block) {
         RegistryObject<T> ret = registerNoItem(name, block);
-        Registration.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties().group(HoloMod.HOLOGROUP)));
+        Registration.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties().group(HoloMod.HOLO_GROUP)));
         return ret;
     }
 }

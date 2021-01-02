@@ -88,7 +88,7 @@ public class HoloMod
     }
     */
     //ItemGroup
-    public static final ItemGroup HOLOGROUP = new ItemGroup("holoLive") {
+    public static final ItemGroup HOLO_GROUP = new ItemGroup("holoLive") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModItems.SILVER_INGOT.get());
