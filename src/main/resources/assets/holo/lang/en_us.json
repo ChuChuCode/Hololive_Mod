@@ -1,6 +1,6 @@
 {
+  "itemGroup.holoLive": "HoloLive Mod",
   "block.holo.silver_block": "Block of Silver",
   "block.holo.silver_ore": "Silver Ore",
-  "item.holo.silver_ingot": "Silver Ingot",
-  "itemGroup.holo.holoLive": "HoloLive Mod"
+  "item.holo.silver_ingot": "Silver Ingot"
 }

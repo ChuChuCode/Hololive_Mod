@@ -8,14 +8,20 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final RegistryObject<SilverOreBlock> SILVER_ORE = register("silver_ore",
-            () -> new SilverOreBlock(AbstractBlock.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).harvestLevel(2).sound(SoundType.STONE)));
+            () -> new SilverOreBlock(
+                    AbstractBlock.Properties
+                            .create(Material.ROCK)
+                            .hardnessAndResistance(3, 10)
+                            .harvestLevel(2)
+                            //.harvestTool(ToolType.PICKAXE)
+                            .sound(SoundType.STONE)));
     //public static final RegistryObject<BloOR_BELT = BLOCKS.register("conveyor_belt", () -> new conveyor_belt_block());
     public static final RegistryObject<Block> SILVER_BLOCK = register("silver_block", () ->
             new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL)));
